@@ -1,9 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CardNonEmergecnyActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CardActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="415dp"
+            android:layout_height="79dp"
+            android:background="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/back_materi"
+                android:layout_width="56dp"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/red"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/back1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteY="8dp">
+
+            </ImageButton>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/searchbar"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/searchBar"
+                    android:layout_width="225dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/searchbar"
+                    android:hint="asdasd"
+                    android:padding="20dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/search"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.77"
+                    app:layout_constraintStart_toStartOf="@+id/toolbar"
+                    tools:layout_editor_absoluteY="16dp" />
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/card_layout"
+            android:layout_width="433dp"
+            android:layout_height="751dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_goneMarginStart="20dp">
+
+        </include>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+    <!--backup card-->
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cardView2"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--app:cardCornerRadius="15dp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/cardView5"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/cardView3"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/cardView3"-->
+    <!--app:layout_constraintVertical_bias="0.062"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:src="@drawable/img_10">-->
+
+    <!--</ImageView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cardView"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--app:cardCornerRadius="15dp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/cardView2"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/pcr"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/pcr"-->
+    <!--app:layout_constraintVertical_bias="0.0"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:src="@drawable/img_7">-->
+
+    <!--</ImageView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/pcr"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--app:cardCornerRadius="15dp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/cardView3"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/cardView"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:src="@drawable/img_8">-->
+    <!--</ImageView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cardView5"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--app:cardCornerRadius="15dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/cardView4"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/cardView4"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:src="@drawable/img_12">-->
+
+    <!--</ImageView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cardView3"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--app:cardCornerRadius="15dp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/cardView4"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/cardView2"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:src="@drawable/img_9">-->
+
+    <!--</ImageView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cardView4"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--app:cardCornerRadius="15dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/cardView2"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--tools:ignore="MissingConstraints">-->
+
+    <!--<ImageView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:src="@drawable/img_11">-->
+
+    <!--</ImageView>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+

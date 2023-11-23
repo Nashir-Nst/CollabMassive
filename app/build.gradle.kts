@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.nashir.massive_project"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.nashir.massive_project"

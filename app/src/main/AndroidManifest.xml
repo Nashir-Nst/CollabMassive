@@ -10,8 +10,65 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Massive_Project"
+        android:theme="@style/Theme.Project"
         tools:targetApi="31">
+        <activity
+            android:name=".DeskPelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CallAmbulanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListAmbulanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CallCustomerServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LukaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendarahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SakitKepalaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TenggelamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeranganJantungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KecelakanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CprActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardNonEmergecnyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NonEmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

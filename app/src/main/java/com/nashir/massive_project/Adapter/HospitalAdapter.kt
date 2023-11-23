@@ -1,6 +1,5 @@
-package com.nashir.massive_project.Adapter
-
 // HospitalAdapter.kt
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
@@ -9,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.nashir.massive_project.CallAmbulanActivity
 import com.nashir.massive_project.Model.Hospital
 import com.nashir.massive_project.R
 
@@ -22,9 +22,12 @@ class HospitalAdapter(private val hospitalList: List<Hospital>) : RecyclerView.A
         init {
             phoneIcon.setOnClickListener {
                 val hospital = hospitalList[adapterPosition]
-                val intent = Intent(Intent.ACTION_DIAL)
-                intent.data = Uri.parse("tel:" + hospital.phoneNumber)
-                itemView.context.startActivity(intent)
+                makePhoneCall(hospital.phoneNumber, itemView.context)
+            }
+
+            itemView.setOnClickListener {
+                val hospital = hospitalList[adapterPosition]
+                openCallAmbulanceActivity(hospital.phoneNumber, itemView.context)
             }
         }
     }
@@ -42,5 +45,17 @@ class HospitalAdapter(private val hospitalList: List<Hospital>) : RecyclerView.A
 
     override fun getItemCount(): Int {
         return hospitalList.size
+    }
+
+    private fun makePhoneCall(phoneNumber: String, context: Context) {
+        val dialIntent = Intent(Intent.ACTION_DIAL)
+        dialIntent.data = Uri.parse("tel:$phoneNumber")
+        context.startActivity(dialIntent)
+    }
+
+    private fun openCallAmbulanceActivity(phoneNumber: String, context: Context) {
+        val intent = Intent(context, CallAmbulanActivity::class.java)
+        intent.putExtra("phoneNumber", phoneNumber)
+        context.startActivity(intent)
     }
 }

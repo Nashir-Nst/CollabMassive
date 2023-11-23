@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgnewstyle">
+    android:background="@drawable/bgnewstyle"
+    tools:context=".MenuActivity">
 
 
     <TextView
@@ -49,12 +50,11 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="474dp"
         android:layout_height="264dp"
-        android:src="@drawable/bgbawah"
+        android:src="@drawable/bgbawahtamplan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

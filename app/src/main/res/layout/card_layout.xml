@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/cream">
 
 
     <androidx.cardview.widget.CardView
@@ -22,7 +23,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img_12"
+            android:src="@drawable/sakikepala"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="551dp">
         </ImageView>
@@ -44,7 +45,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/img_9"
+                    android:src="@drawable/kecelakaan"
                     tools:ignore="MissingConstraints"
                     tools:layout_editor_absoluteX="28dp"
                     tools:layout_editor_absoluteY="137dp">
@@ -67,7 +68,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img_11"
+            android:src="@drawable/tenggelam"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="214dp"
             tools:layout_editor_absoluteY="342dp">
@@ -91,7 +92,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img_10"
+            android:src="@drawable/serangan_jantung"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="46dp"
             tools:layout_editor_absoluteY="558dp">
@@ -115,11 +116,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img_8"
             tools:layout_editor_absoluteX="66dp"
-            tools:layout_editor_absoluteY="270dp">
-        </ImageView>
-
+            tools:layout_editor_absoluteY="270dp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -139,7 +137,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_14"
+                    android:src="@drawable/lukabakar"
                     tools:ignore="MissingConstraints"
                     tools:layout_editor_absoluteX="210dp"
                     tools:layout_editor_absoluteY="137dp">
@@ -163,7 +161,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img_7"
+            android:src="@drawable/asma"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="210dp"
             tools:layout_editor_absoluteY="137dp">
@@ -186,7 +184,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/img_13"
+            android:src="@drawable/pendarahan"
             tools:layout_editor_absoluteX="44dp"
             tools:layout_editor_absoluteY="551dp">
         </ImageView>
@@ -196,70 +194,6 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
-
-
-<!--    <?xml version="1.0" encoding="utf-8"?>-->
-<!--<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--xmlns:android="http://schemas.android.com/apk/res/android">-->
-
-<!--<androidx.constraintlayout.widget.ConstraintLayout-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".CardActivity">-->
-
-<!--    <ImageView-->
-<!--        android:layout_width="414dp"-->
-<!--        android:layout_height="178dp"-->
-<!--        android:src="@drawable/img_5"-->
-<!--        tools:layout_editor_absoluteX="-2dp"-->
-<!--        tools:layout_editor_absoluteY="-87dp"-->
-<!--        tools:ignore="MissingConstraints" />-->
-
-<!--    <ImageButton-->
-<!--        android:id="@+id/back1"-->
-<!--        android:layout_width="56dp"-->
-<!--        android:layout_height="54dp"-->
-<!--        android:backgroundTint="@color/red"-->
-<!--        android:src="@drawable/back"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.045"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"-->
-<!--        tools:layout_editor_absoluteY="8dp">-->
-
-<!--    </ImageButton>-->
-
-<!--    <ImageButton-->
-<!--        android:id="@+id/list"-->
-<!--        android:layout_width="63dp"-->
-<!--        android:layout_height="62dp"-->
-<!--        android:backgroundTint="@color/red"-->
-<!--        android:src="@drawable/list"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.954"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"-->
-<!--        tools:layout_editor_absoluteY="8dp">-->
-
-<!--    </ImageButton>-->
-
-<!--    <include-->
-<!--        layout="@layout/card_layout"-->
-<!--        android:layout_width="381dp"-->
-<!--        android:layout_height="567dp"-->
-<!--        android:layout_marginHorizontal="16dp"-->
-<!--        tools:layout_editor_absoluteX="16dp"-->
-<!--        tools:layout_editor_absoluteY="153dp" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-<!--</ScrollView>-->
 
 
 
